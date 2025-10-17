@@ -7,7 +7,7 @@
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     width: 30vw;
-    max-width: 1000px;
+    max-width: 2000px;
     height: 80vh;
     max-height: 1000px;
     border-radius: 20px;
