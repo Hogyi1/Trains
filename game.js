@@ -1062,7 +1062,7 @@ document.addEventListener('keydown', (event) => {
                         if (rotation % 180 == 0 && currentImageIndex == 0) {
                             const imgElement = clickedCell.querySelector('img');
                             imgElement.src = obstacleImages[currentImageIndex];
-                            imgElement.style.transform = `rotate(${rotation}deg)`;
+                            // imgElement.style.transform = `rotate(${rotation}deg)`;
                             placeTiles(currentImageIndex, rotation, p);
                             closePopUp()
                         } else {
@@ -1076,7 +1076,7 @@ document.addEventListener('keydown', (event) => {
                         if ((rotation + 90) % 180 == 0 && currentImageIndex == 0) {
                             const imgElement = clickedCell.querySelector('img');
                             imgElement.src = obstacleImages[currentImageIndex];
-                            imgElement.style.transform = `rotate(${rotation}deg)`;
+                            // imgElement.style.transform = `rotate(${rotation}deg)`;
                             placeTiles(currentImageIndex, rotation, p);
                             closePopUp()
                         } else {
@@ -1217,7 +1217,7 @@ function placeTiles(tile, rotation, position) {
         allPlaced--;
         map[x][y][4] = true;
         if (allPlaced <= 0) {
-            console.log("Most cskkolja")
+            console.log("Most csekkolja")
             checkRoute()
         }
         return;
