@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailWays</title>
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="components/game.css">
+    <link rel="stylesheet" href="components/main.css">
+    <link rel="stylesheet" href="components/thumbnail.css">
+    <link rel="stylesheet" href="components/description.css">
+    <link rel="stylesheet" href="components/start.css">
+    <link rel="stylesheet" href="components/savegame.css">
+    <link rel="stylesheet" href="components/scoreboard.css">
+
+
+</head>
+
+<body id="background">
+    <main>
+        <div id="popup" class="popup">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="popUpIcon closeIcon">
+                <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="popUpIcon Left">
+                <path fill-rule="evenodd"
+                    d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <div class="UpDown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="popUpIcon Up">
+                    <path fill-rule="evenodd"
+                        d="M11.47 10.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 12.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M11.47 4.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 6.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <img src="./pics/tiles/bridge.png" alt="" class="popUpImg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="popUpIcon Down">
+                    <path fill-rule="evenodd"
+                        d="M11.47 13.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 0 0-1.06-1.06L12 11.69 5.03 4.72a.75.75 0 0 0-1.06 1.06l7.5 7.5Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M11.47 19.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 1 0-1.06-1.06L12 17.69l-6.97-6.97a.75.75 0 0 0-1.06 1.06l7.5 7.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="popUpIcon Right">
+                <path fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+        </div>
+
+        <section class="thumbnail" id="thumbnail">
+            <div class="thumbnail-text revealTitle">
+
+                <h1 class="title">RAILWAYS</h1>
+                <p class="continue" id="continue-button">Press a button to continue</p>
+
+            </div>
+        </section>
+
+        <section class="menu toreveal" id="menu">
+            <h1 class="title2">RAILWAYS</h1>
+            <button class="BackBtn toreveal" id="BackBtn">
+                <div class="insideback"><svg class="backicon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                    <span class="textback">Back</span>
+                </div>
+            </button>
+            <div class="OptionMenu toreveal">
+                <button class="btn" id="NewGame">New Game</button>
+                <button class="btn" id="SavedGame">Saved Games</button>
+                <button class="btn" id="Description">Description</button>
+                <button class="btn" id="ScoreBoard">Scoreboard</button>
+            </div>
+
+            <div class="StartMenu toreveal">
+                <h2 class="startTitle">New Game</h2>
+                <label for="name">
+                    <input type="text" id="name" placeholder="Enter your name" class="Name">
+                </label>
+                <div class="middle">
+                    <img src="" alt="">
+                    <div class="difficulty">
+                        <p class="difficultyText">Choose the difficulty</p>
+                        <form action="" class="difficulties">
+                            <input type="radio" name="difficulty" id="Easy" value="difficultyEasy">
+                            <label for="Easy" class="radioLabel">5 X 5</label>
+
+                            <input type="radio" name="difficulty" id="Hard" value="difficultyHard">
+                            <label for="Hard" class="radioLabel">7 X 7</label>
+
+                        </form>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <button class="btn disabled" id="StartNewGame">Start Game</button>
+            </div>
+
+            <div class="DescriptionMenu toreveal">
+                <h2 class="descriptionTitle">Description</h2>
+                <div class="twoside">
+                    <div class="part1">
+                        <p class="descriptionText">On the map, there are different types of tiles that you need to use
+                            wisely to
+                            design the railway network. Each tile has its own rules that influence where and how you can
+                            build
+                            the railway. There are <b>four</b> possible tile types: </p>
+                        <div class="images">
+                            <div class="descs">
+                                <img src="pics/tiles/empty.png" alt="" class="cellImage">
+                                <h2 class="cellType">Empty tile</h2>
+                            </div>
+
+                            <div class="descs">
+                                <img src="pics/tiles/bridge.png" alt="" class="cellImage">
+                                <h2 class="cellType">Bridge tile</h2>
+                            </div>
+
+                            <div class="descs">
+                                <img src="pics/tiles/mountain.png" alt="" class="cellImage">
+                                <h2 class="cellType">Mountain tile</h2>
+                            </div>
+
+                            <div class="descs">
+                                <img src="pics/tiles/oasis.png" alt="" class="cellImage">
+                                <h2 class="cellType">Oasis tile</h2>
+                            </div>
+                        </div>
+                        <p class="descriptionText">Empty Cells: You can place any type of track.
+                            Bridges: Only straight tracks can be placed.
+                            Mountains: Only curved tracks can be placed.
+                            Oasis: No tracks can be placed.</p>
+                        <p class="descriptionText">The goal is to build a continuous circular railway that visits
+                            every
+                            accessible tile without crossing itself, branching out, or passing through any tile more
+                            than once.
+                        </p>
+                    </div>
+                    <div class="part2">
+                        <p class="descriptionText">Select a tile you want to place the track on. Use the up and down
+                            arrows to change track types.
+                            Use the left and right arrows to rotate the tracks.
+                            Alternatively, you can use the icons beside the track for these actions. Place a track by
+                            pressing Enter or by clicking on the image.</p>
+                        <div class="tryyourself">
+                            <div id="popup2" class="popup2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="popUpIcon Left2">
+                                    <path fill-rule="evenodd"
+                                        d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                <div class="UpDown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="popUpIcon Up2">
+                                        <path fill-rule="evenodd"
+                                            d="M11.47 10.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 12.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                            clip-rule="evenodd" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.47 4.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 6.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <img src="./pics/tiles/straight_rail.png" alt="" class="popUpImg2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="popUpIcon Down2">
+                                        <path fill-rule="evenodd"
+                                            d="M11.47 13.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 0 0-1.06-1.06L12 11.69 5.03 4.72a.75.75 0 0 0-1.06 1.06l7.5 7.5Z"
+                                            clip-rule="evenodd" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.47 19.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 1 0-1.06-1.06L12 17.69l-6.97-6.97a.75.75 0 0 0-1.06 1.06l7.5 7.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="popUpIcon Right2">
+                                    <path fill-rule="evenodd"
+                                        d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="descriptionText">Try it for yourself!</p>
+                        </div>
+                        <p class="descriptionText">The game continues until you create a continuous path. If you place
+                            all tracks without forming a connected path, a 1-minute penalty will be added to your time.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="SavedGameMenu toreveal">
+                <h2 class="savedGameTitle">Saved Games</h2>
+                <p class="descriptionText">You can continue your saved games</p>
+                <div class="savedgamestable">
+                    <table class="scrollable">
+                        <thead>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Difficulty</th>
+                            <th>Play</th>
+                        </thead>
+                        <tbody class="tbody2"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="ScoreBoardMenu toreveal">
+                <h2 class="topScoreTitle">Top scores</h2>
+                <div class="tables">
+                    <div class="tablediff">
+                        <p>Easy</p>
+                        <hr>
+                        <div class="topscoretable">
+                            <table class="scrollable3">
+                                <thead>
+                                    <th>#No</th>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                </thead>
+                                <tbody class="tbody3"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tablediff">
+                        <p>Hard</p>
+                        <hr>
+                        <div class="topscoretable">
+                            <table class="scrollable3">
+                                <thead>
+                                    <th>#No</th>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                </thead>
+                                <tbody class="tbody4"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sideGameBar toreveal">
+                <div class="datas">
+                    <div>
+                        <p class="yourName">YOUR NAME</p>
+                    </div>
+                    <hr>
+                    <p class="timeElapsedText">Time elapsed:</p>
+                    <hr>
+                    <div class="timer">
+                        <p class="timerText">00:00</p>
+                    </div>
+                </div>
+                <div class="scoreBoard">
+                    <table class="scrollableTable">
+                        <thead>
+                            <th>Name</th>
+                            <th>Time</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <button class="btn" id="saveStatus">Save Game</button>
+            </div>
+        </section>
+
+        <section class="game zoomOut">
+            <div class="GamesIsSaved">
+                <p>Game Saved</p>
+            </div>
+            <div class="YouWon">
+                <p>You Won</p>
+            </div>
+            <div class="tableContainer">
+                <table>
+                    <tbody class="tbody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="controls.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
