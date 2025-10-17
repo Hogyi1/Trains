@@ -1,0 +1,31 @@
+[X] Egyéb: igényes kinézet és kódszervezés (1 pont)
+A feladat részben meg lett oldva, 
+1536px-ig megfelelő a kinézet, 1024px-ig viszont több helyen egybecsúszik
+viszont a funkcionalitásban nem akadályoz
+Háttérkép saját
+
+//Ötlet: Hamilton Circuit from matrix
+//https://stackoverflow.com/questions/33569980/pathfinding-in-java-stepping-on-each-tile-once
+
+A játékhoz pálya generálást használtam
+A pályán először lehelyezem az oasis akadályokat, 
+majd backtrackinggel megnézem, hogy körbejárható-e, ha igen
+folytatom az akadályok lehelyezését és minden lehelyezésnél 
+megnézem a pálya körbejárhatóságát.
+Az 5x5-ös pálya csupán pár tized másodperc viszont a 7x7-es
+pálya akár több percig is eltarthat, 
+ezért ott az előre megadott pályákat használtam, hogy ne kelljen várni.
+a //runSetup(difficultyHard),-al ki lehet próbálni mennyi idő alatt készíti el.
+
+A végső útvonalat ugyanígy backtrackinggel nézem meg, illetve megnézem,
+hogy minden cellám tartalmaz pontosan kettő be/kimeneti irányt,
+Ha a játékos rossz utat készített el akkor kap 1 perc penaltyt és 
+üresre állítja vissza a pályát. 
+
+A toplista az egész játék folyamán látható illetve a ScoreBoard menüben, ha sikeres
+a játék egyből fel is kerül az idő a listába. Az éppen aktuális állapotot 
+el lehet menteni a játék melletti Save Game gombbal. A mentett játékállásokat
+visszalehet állítani, a Saved Games menü alatt. A Description menüben 
+ki lehet próbálni a lehelyező eszközt amit a nyilakkal illetve az iconokkal 
+is lehet használni.
+

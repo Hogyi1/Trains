@@ -1,0 +1,75 @@
+.ScoreBoardMenu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.topScoreTitle{
+    margin-top: 8rem;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.scrollable3{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    padding-left: 20px;
+}
+
+.scrollable3 th {
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-bottom: 2px solid aliceblue;
+}
+
+.scrollable3 td {
+    border-left: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    cursor: default;
+}
+
+.topscoretable{
+    overflow-y: auto;
+    margin-top: 1rem;
+    scrollbar-gutter: stable;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+}
+
+.tables{
+    display: flex;
+    gap: 5rem;
+}
+
+.tablediff{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablediff p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.tablediff hr{
+    width: 100%;
+}
